@@ -1,0 +1,353 @@
+local maintenanceA = false
+
+if maintenanceA then
+script.Parent.Parent.Parent.Parent.Parent.MainGui.Enabled = false
+task.wait(0.1)
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "Novive",
+		Text = "Down for Maintainence"
+	})
+	return
+end
+
+
+local MainGui = Instance.new("ScreenGui")
+local LoadingFrame = Instance.new("Frame")
+local DLoadingFrame = Instance.new("Frame")
+local Novive = Instance.new("TextLabel")
+local Loader = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local Close = Instance.new("TextButton")
+local Icon = Instance.new("ImageLabel")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local UICorner_2 = Instance.new("UICorner")
+local LoadingLine = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local SystemData = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local Private = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local Maintenance = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local Authorization = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local LoadingText = Instance.new("TextLabel")
+local ScriptFrame = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local DScriptFrame = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local CloseScriptFrame = Instance.new("TextButton")
+local Icon_2 = Instance.new("ImageLabel")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+
+--Properties:
+
+MainGui.Name = "MainGui"
+MainGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+MainGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+LoadingFrame.Name = "LoadingFrame"
+LoadingFrame.Parent = MainGui
+LoadingFrame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+LoadingFrame.BorderColor3 = Color3.fromRGB(40, 40, 40)
+LoadingFrame.Position = UDim2.new(0.243556708, 0, 0.334736854, 0)
+LoadingFrame.Size = UDim2.new(0, 398, 0, 137)
+LoadingFrame.Visible = false
+
+DLoadingFrame.Name = "DLoadingFrame"
+DLoadingFrame.Parent = LoadingFrame
+DLoadingFrame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+DLoadingFrame.BorderColor3 = Color3.fromRGB(20, 20, 20)
+DLoadingFrame.Size = UDim2.new(0, 397, 0, 40)
+
+Novive.Name = "Novive"
+Novive.Parent = DLoadingFrame
+Novive.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Novive.BackgroundTransparency = 1.000
+Novive.Position = UDim2.new(0.0731032044, 0, 0.23580569, 0)
+Novive.Size = UDim2.new(0, 51, 0, 21)
+Novive.Font = Enum.Font.GothamBold
+Novive.Text = "Novive Beta |"
+Novive.TextColor3 = Color3.fromRGB(255, 255, 255)
+Novive.TextSize = 14.000
+
+Loader.Name = "Loader"
+Loader.Parent = Novive
+Loader.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Loader.BackgroundTransparency = 1.000
+Loader.Position = UDim2.new(1.45324326, 0, -0.00228954852, 0)
+Loader.Size = UDim2.new(0, 51, 0, 21)
+Loader.Font = Enum.Font.GothamBold
+Loader.Text = "Loader"
+Loader.TextColor3 = Color3.fromRGB(255, 215, 0)
+Loader.TextSize = 14.000
+
+UICorner.Parent = DLoadingFrame
+
+Close.Name = "Close"
+Close.Parent = DLoadingFrame
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.Position = UDim2.new(0.926952124, 0, 0.234603494, 0)
+Close.Size = UDim2.new(0, 29, 0, 21)
+Close.Font = Enum.Font.SourceSans
+Close.Text = " "
+Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextSize = 14.000
+
+Icon.Name = "Icon"
+Icon.Parent = Close
+Icon.BackgroundTransparency = 1.000
+Icon.Size = UDim2.new(0, 29, 0, 24)
+Icon.Image = "rbxassetid://7072722603"
+
+UIAspectRatioConstraint.Parent = Icon
+
+UICorner_2.Parent = LoadingFrame
+
+LoadingLine.Name = "LoadingLine"
+LoadingLine.Parent = LoadingFrame
+LoadingLine.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+LoadingLine.BorderColor3 = Color3.fromRGB(20, 20, 20)
+LoadingLine.Position = UDim2.new(0.0452261306, 0, 0.817518294, 0)
+LoadingLine.Size = UDim2.new(0, 362, 0, 11)
+
+UICorner_3.Parent = LoadingLine
+
+SystemData.Name = "SystemData"
+SystemData.Parent = LoadingLine
+SystemData.BackgroundColor3 = Color3.fromRGB(255, 215, 0)
+SystemData.Position = UDim2.new(0.776243091, 0, -1.38716268e-06, 0)
+SystemData.Size = UDim2.new(0, 93, 0, 11)
+SystemData.Visible = false
+
+UICorner_4.Parent = SystemData
+
+Private.Name = "Private"
+Private.Parent = LoadingLine
+Private.BackgroundColor3 = Color3.fromRGB(255, 215, 0)
+Private.Position = UDim2.new(0.519336998, 0, 0, 0)
+Private.Size = UDim2.new(0, 100, 0, 11)
+Private.Visible = false
+
+UICorner_5.Parent = Private
+
+Maintenance.Name = "Maintenance"
+Maintenance.Parent = LoadingLine
+Maintenance.BackgroundColor3 = Color3.fromRGB(255, 215, 0)
+Maintenance.Position = UDim2.new(0.259668499, 0, 0, 0)
+Maintenance.Size = UDim2.new(0, 100, 0, 11)
+Maintenance.Visible = false
+
+UICorner_6.Parent = Maintenance
+
+Authorization.Name = "Authorization"
+Authorization.Parent = LoadingLine
+Authorization.BackgroundColor3 = Color3.fromRGB(255, 215, 0)
+Authorization.Size = UDim2.new(0, 100, 0, 11)
+Authorization.Visible = false
+
+UICorner_7.Parent = Authorization
+
+LoadingText.Name = "LoadingText"
+LoadingText.Parent = LoadingLine
+LoadingText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LoadingText.BackgroundTransparency = 1.000
+LoadingText.Position = UDim2.new(0.221119419, 0, -3.85998678, 0)
+LoadingText.Size = UDim2.new(0, 200, 0, 22)
+LoadingText.Font = Enum.Font.GothamBold
+LoadingText.Text = "Checking Authorization.. (1/4)"
+LoadingText.TextColor3 = Color3.fromRGB(255, 215, 0)
+LoadingText.TextSize = 14.000
+
+ScriptFrame.Name = "ScriptFrame"
+ScriptFrame.Parent = MainGui
+ScriptFrame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+ScriptFrame.BorderColor3 = Color3.fromRGB(40, 40, 40)
+ScriptFrame.Position = UDim2.new(0.207474232, 0, 0.191578969, 0)
+ScriptFrame.Size = UDim2.new(0, 453, 0, 273)
+
+UICorner_8.Parent = ScriptFrame
+
+DScriptFrame.Name = "DScriptFrame"
+DScriptFrame.Parent = ScriptFrame
+DScriptFrame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+DScriptFrame.BorderColor3 = Color3.fromRGB(20, 20, 20)
+DScriptFrame.Size = UDim2.new(0, 452, 0, 36)
+
+UICorner_9.Parent = DScriptFrame
+
+TextLabel.Parent = DScriptFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.017699115, 0, 0.194444448, 0)
+TextLabel.Size = UDim2.new(0, 59, 0, 21)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "Novive"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+
+CloseScriptFrame.Name = "CloseScriptFrame"
+CloseScriptFrame.Parent = ScriptFrame
+CloseScriptFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseScriptFrame.BackgroundTransparency = 1.000
+CloseScriptFrame.Position = UDim2.new(0.920529783, 0, 0.0219780225, 0)
+CloseScriptFrame.Size = UDim2.new(0, 29, 0, 23)
+CloseScriptFrame.Font = Enum.Font.SourceSans
+CloseScriptFrame.Text = " "
+CloseScriptFrame.TextColor3 = Color3.fromRGB(0, 0, 0)
+CloseScriptFrame.TextSize = 14.000
+
+Icon_2.Name = "Icon"
+Icon_2.Parent = CloseScriptFrame
+Icon_2.BackgroundTransparency = 1.000
+Icon_2.Position = UDim2.new(-0.00222469494, 0, -0.144227892, 0)
+Icon_2.Size = UDim2.new(0, 29, 0, 30)
+Icon_2.Image = "rbxassetid://7072722603"
+
+UIAspectRatioConstraint_2.Parent = Icon_2
+
+-- Scripts:
+
+local function GQPFXRD_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.LoadingFrame.Visible = false
+	end)
+end
+coroutine.wrap(GQPFXRD_fake_script)()
+local function STUA_fake_script() -- LoadingText.LocalScript 
+	local script = Instance.new('LocalScript', LoadingText)
+
+	script.Parent.Parent.Parent.Parent.ScriptFrame.Visible = false
+	
+	
+	-- Locals
+	local maintenance = false
+	local private = true
+	-- Loads
+	task.wait(2)
+	script.Parent.Parent.Authorization.Visible = true
+	script.Parent.Text = "Checking for Script Maintenance.. (2/3)"
+	if maintenance == true then
+		script.Parent.Parent.Parent.Parent.Parent.MainGui.Enabled = false
+		print("Novine is down for Maintenance, check the Discord")
+	else
+		task.wait(2)
+		script.Parent.Parent.Maintenance.Visible = true
+		script.Parent.Text = "Checking for Private.. (3/3)"
+		task.wait(2)
+		script.Parent.Parent.Private.Visible = true
+		script.Parent.Text = "Finalizing Systems.. (1/5)"
+		task.wait(1)
+		script.Parent.Text = "Finalizing Systems.. (2/5)"
+		task.wait(1)
+		script.Parent.Text = "Finalizing Systems.. (3/5)"
+		task.wait(1)
+		script.Parent.Text = "Finalizing Systems.. (4/5)"
+		task.wait(1)
+		script.Parent.Text = "Finalizing Systems.. (5/5)"
+		task.wait(0.5)
+		script.Parent.Parent.SystemData.Visible = true
+		script.Parent.Text = "Finished!"
+		task.wait(1)
+		script.Parent.Parent.Parent.Parent.LoadingFrame.Visible = false
+		script.Parent.Parent.Parent.Parent.ScriptFrame.Visible = true
+	end
+	
+end
+coroutine.wrap(STUA_fake_script)()
+local function FMTKG_fake_script() -- LoadingFrame.Dragify 
+	local script = Instance.new('LocalScript', LoadingFrame)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+		dragToggle = nil
+		dragSpeed = 0.15
+		dragInput = nil
+		dragStart = nil
+		dragPos = nil
+		function updateInput(input)
+			Delta = input.Position - dragStart
+			Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.15), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	dragify(script.Parent)
+	
+end
+coroutine.wrap(FMTKG_fake_script)()
+local function RGKOD_fake_script() -- ScriptFrame.Dragify 
+	local script = Instance.new('LocalScript', ScriptFrame)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+		dragToggle = nil
+		dragSpeed = 0.15
+		dragInput = nil
+		dragStart = nil
+		dragPos = nil
+		function updateInput(input)
+			Delta = input.Position - dragStart
+			Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.15), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	dragify(script.Parent)
+	
+end
+coroutine.wrap(RGKOD_fake_script)()
+local function HVITIRS_fake_script() -- CloseScriptFrame.LocalScript 
+	local script = Instance.new('LocalScript', CloseScriptFrame)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.ScriptFrame.Visible = false
+	end)
+end
+coroutine.wrap(HVITIRS_fake_script)()
