@@ -53,7 +53,6 @@ LoadingFrame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
 LoadingFrame.BorderColor3 = Color3.fromRGB(40, 40, 40)
 LoadingFrame.Position = UDim2.new(0.243556708, 0, 0.334736854, 0)
 LoadingFrame.Size = UDim2.new(0, 398, 0, 137)
-LoadingFrame.Visible = false
 
 DLoadingFrame.Name = "DLoadingFrame"
 DLoadingFrame.Parent = LoadingFrame
@@ -167,6 +166,7 @@ ScriptFrame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
 ScriptFrame.BorderColor3 = Color3.fromRGB(40, 40, 40)
 ScriptFrame.Position = UDim2.new(0.207474232, 0, 0.191578969, 0)
 ScriptFrame.Size = UDim2.new(0, 453, 0, 273)
+ScriptFrame.Visible = false
 
 UICorner_8.Parent = ScriptFrame
 
@@ -210,15 +210,15 @@ UIAspectRatioConstraint_2.Parent = Icon_2
 
 -- Scripts:
 
-local function GQPFXRD_fake_script() -- Close.LocalScript 
+local function VFEANA_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Parent.LoadingFrame.Visible = false
 	end)
 end
-coroutine.wrap(GQPFXRD_fake_script)()
-local function STUA_fake_script() -- LoadingText.LocalScript 
+coroutine.wrap(VFEANA_fake_script)()
+local function FDWH_fake_script() -- LoadingText.LocalScript 
 	local script = Instance.new('LocalScript', LoadingText)
 
 	script.Parent.Parent.Parent.Parent.ScriptFrame.Visible = false
@@ -258,8 +258,8 @@ local function STUA_fake_script() -- LoadingText.LocalScript
 	end
 	
 end
-coroutine.wrap(STUA_fake_script)()
-local function FMTKG_fake_script() -- LoadingFrame.Dragify 
+coroutine.wrap(FDWH_fake_script)()
+local function KOIT_fake_script() -- LoadingFrame.Dragify 
 	local script = Instance.new('LocalScript', LoadingFrame)
 
 	local UIS = game:GetService("UserInputService")
@@ -300,8 +300,8 @@ local function FMTKG_fake_script() -- LoadingFrame.Dragify
 	dragify(script.Parent)
 	
 end
-coroutine.wrap(FMTKG_fake_script)()
-local function RGKOD_fake_script() -- ScriptFrame.Dragify 
+coroutine.wrap(KOIT_fake_script)()
+local function UZLVHX_fake_script() -- ScriptFrame.Dragify 
 	local script = Instance.new('LocalScript', ScriptFrame)
 
 	local UIS = game:GetService("UserInputService")
@@ -342,12 +342,12 @@ local function RGKOD_fake_script() -- ScriptFrame.Dragify
 	dragify(script.Parent)
 	
 end
-coroutine.wrap(RGKOD_fake_script)()
-local function HVITIRS_fake_script() -- CloseScriptFrame.LocalScript 
+coroutine.wrap(UZLVHX_fake_script)()
+local function IPHN_fake_script() -- CloseScriptFrame.LocalScript 
 	local script = Instance.new('LocalScript', CloseScriptFrame)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.ScriptFrame.Visible = false
 	end)
 end
-coroutine.wrap(HVITIRS_fake_script)()
+coroutine.wrap(IPHN_fake_script)()
